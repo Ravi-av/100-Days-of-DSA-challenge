@@ -35,7 +35,7 @@ private:
 public:
     bool isPalindrome(string s) {
         
-        //faltu character hatado
+        //remove all non alpanumeric code
         string temp = "";
         
         for(int j=0; j<s.length(); j++) {   
@@ -44,7 +44,7 @@ public:
             }
         }
         
-        //lowercase me kardo
+        //convert into lowercae
         for(int j=0; j<temp.length(); j++) { 
             temp[j] = toLowerCase(temp[j]);
         }
